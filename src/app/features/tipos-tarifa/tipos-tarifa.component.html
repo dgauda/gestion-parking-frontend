@@ -1,0 +1,20 @@
+<!-- Breadcrumb -->
+<td-breadcrumbs>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <a td-breadcrumb [routerLink]="'/'">{{literals.Home}}</a>
+  <a td-breadcrumb [routerLink]="'/'">{{literals.mantenimientos}}</a>
+  <td-breadcrumb>{{literals.tiposTarifaTitle}}</td-breadcrumb>
+</td-breadcrumbs>
+
+<!-- Page Title -->
+<mat-card-title>{{literals.tiposTarifaTitle}}</mat-card-title>
+
+<mat-divider></mat-divider>
+
+<!-- Content -->
+<mat-card-content>
+  <!-- Table -->
+  <app-table></app-table>
+
+</mat-card-content>
+<mat-divider></mat-divider>

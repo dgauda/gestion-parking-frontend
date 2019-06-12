@@ -1,0 +1,11 @@
+  <td-data-table
+  #dataTable
+  [data]="filteredData"
+  [columns]="columns">
+</td-data-table>
+<div class="md-padding" *ngIf="!dataTable.hasData" layout="row" layout-align="center center">
+  <h3>No results to display.</h3>
+</div>
+  <td-paging-bar #pagingBar  pageLinkCount="5" [firstLast]="false" [pageSize]="pageSize" [total]="basicData.length" (change)="changeLinks($event)">
+      <span hide-xs>{{pagingBar.range}} of {{pagingBar.total}}</span>
+    </td-paging-bar>
